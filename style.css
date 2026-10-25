@@ -1,15 +1,17 @@
 :root {
-  --bg: #f4f7ff;
-  --bg-strong: #eef3ff;
+  --bg: #eef4ff;
+  --bg-strong: #e4ecff;
   --surface: #ffffff;
-  --surface-2: #edf4ff;
-  --primary: #2563eb;
+  --surface-soft: #f5f8ff;
+  --primary: #0f172a;
   --primary-dark: #1d4ed8;
-  --accent: #70a5ff;
-  --text: #1e293b;
-  --muted: #64748b;
-  --border: #dfe9ff;
-  --shadow: 0 18px 45px rgba(37, 99, 235, 0.12);
+  --primary-mid: #2563eb;
+  --accent: #60a5fa;
+  --accent-soft: #dbeafe;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #dbe5f6;
+  --shadow: 0 18px 40px rgba(37, 99, 235, 0.12);
 }
 
 * {
@@ -24,7 +26,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(180deg, #f7f9ff 0%, #edf3ff 100%);
+  background: linear-gradient(180deg, #f7faff 0%, #edf4ff 100%);
   color: var(--text);
   line-height: 1.6;
 }
@@ -53,7 +55,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--primary-mid);
   margin-bottom: 0.75rem;
 }
 
@@ -72,8 +74,8 @@ img {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(14px);
-  background: rgba(244, 247, 255, 0.8);
-  border-bottom: 1px solid rgba(147, 177, 255, 0.2);
+  background: rgba(238, 244, 255, 0.8);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
 }
 
 .nav {
@@ -103,7 +105,7 @@ img {
 
 .nav-menu a:hover,
 .nav-menu a:focus-visible {
-  color: var(--primary);
+  color: var(--primary-mid);
 }
 
 .menu-toggle {
@@ -174,7 +176,7 @@ img {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
   color: white;
   box-shadow: var(--shadow);
 }
@@ -224,12 +226,11 @@ img {
 
 .profile-card {
   width: min(100%, 420px);
-  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(227,236,255,0.8));
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(219,234,254,0.7));
   border: 1px solid rgba(148, 163, 184, 0.18);
   border-radius: 30px;
   padding: 2rem;
   box-shadow: var(--shadow);
-  position: relative;
 }
 
 .avatar {
@@ -242,8 +243,8 @@ img {
   font-size: 2.5rem;
   font-weight: 800;
   color: white;
-  background: linear-gradient(135deg, #2563eb, #7ab8ff);
-  box-shadow: 0 18px 38px rgba(37, 99, 235, 0.35);
+  background: linear-gradient(135deg, #0f172a, #60a5fa);
+  box-shadow: 0 18px 38px rgba(30, 64, 175, 0.35);
 }
 
 .card-badges {
@@ -347,7 +348,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  background: linear-gradient(135deg, #e8f1ff, #dfeeff);
+  background: linear-gradient(135deg, #dfeaff, #eff6ff);
   font-size: 1.5rem;
   margin-bottom: 0.8rem;
 }
@@ -382,18 +383,18 @@ img {
 }
 
 .project-thumb.one {
-  background: linear-gradient(135deg, rgba(37,99,235,0.6), rgba(112,165,255,0.75)),
-    linear-gradient(135deg, #dbeafe, #eff6ff);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(96, 165, 250, 0.75)),
+    linear-gradient(135deg, #e0f2fe, #eff6ff);
 }
 
 .project-thumb.two {
-  background: linear-gradient(135deg, rgba(15,118,110,0.65), rgba(93,223,196,0.8)),
-    linear-gradient(135deg, #ccfbf1, #f0fdfa);
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.72), rgba(125, 211, 252, 0.8)),
+    linear-gradient(135deg, #dbeafe, #eff6ff);
 }
 
 .project-thumb.three {
-  background: linear-gradient(135deg, rgba(79,70,229,0.62), rgba(129,140,248,0.78)),
-    linear-gradient(135deg, #e0e7ff, #eef2ff);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.68), rgba(96, 165, 250, 0.8)),
+    linear-gradient(135deg, #dbeafe, #f8fbff);
 }
 
 .project-body {
@@ -404,7 +405,7 @@ img {
   display: inline-block;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: #eaf2ff;
+  background: #edf5ff;
   color: var(--primary-dark);
   font-size: 0.77rem;
   font-weight: 700;
@@ -451,7 +452,7 @@ img {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, var(--primary), rgba(37,99,235,0.15));
+  background: linear-gradient(180deg, var(--primary-mid), rgba(59,130,246,0.18));
 }
 
 .timeline-item {
@@ -468,7 +469,7 @@ img {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  background: linear-gradient(135deg, var(--primary-mid), var(--accent));
   border: 3px solid white;
   box-shadow: 0 8px 18px rgba(37,99,235,0.2);
   margin-top: 0.3rem;
@@ -497,7 +498,7 @@ img {
 }
 
 .contact-box {
-  background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(112,165,255,0.14));
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(96, 165, 250, 0.14));
   border: 1px solid var(--border);
   border-radius: 26px;
   padding: 2rem;
